@@ -1,23 +1,31 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
-
-        <q-toolbar-title> Quasar App </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+    <q-header class="main-header" elevated>
+      <div class="info-bar">
+        <span class="info-bar-text">
+          Any questions? Text or call (347)-835-4380
+        </span>
+      </div>
+      <q-toolbar class="main-toolbar">
+        <!-- Logo on the left, links to home -->
+        <div class="logo-container">
+          <router-link to="/">
+            <img src="~assets/logos/DocushadeLogo.png" alt="Docushade Logo" class="header-logo" />
+          </router-link>
+        </div>
+        <div class="toolbar-center">
+          <div class="nav-links">
+            <q-btn flat label="Reviews" to="/reviews" />
+            <q-btn flat label="Start My Exemption" to="/exemption" />
+            <q-btn flat label="Terms of Service" to="/terms" />
+            <q-btn flat label="Email Us" href="mailto:info@docushade.com" />
+          </div>
+        </div>
+        <div class="toolbar-right">
+          <q-btn flat round dense icon="person" class="user-icon" />
+        </div>
       </q-toolbar>
     </q-header>
-
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
-      <q-list>
-        <q-item-label header> Essential Links </q-item-label>
-
-        <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" />
-      </q-list>
-    </q-drawer>
-
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -25,57 +33,122 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
-
-const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev',
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework',
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev',
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev',
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev',
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev',
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev',
-  },
-]
-
-const leftDrawerOpen = ref(false)
-
-function toggleLeftDrawer() {
-  leftDrawerOpen.value = !leftDrawerOpen.value
-}
+// ...existing code...
 </script>
+
+<style scoped>
+.q-page-container {
+  padding-top: 0px !important;
+  overflow-x: hidden;
+}
+
+/* Info bar styles */
+.info-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #1976d2;
+  color: #fff;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  z-index: 10;
+  overflow: hidden;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-bar-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  /* Smooth continuous scroll */
+  animation: smooth-slide-left 18s linear infinite;
+}
+
+@keyframes smooth-slide-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.main-header {
+  background: #222;
+  min-height: 80px;
+  padding-top: 34px;
+  position: relative;
+}
+
+.main-toolbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 60px;
+  padding: 0 24px;
+  margin-top: 0;
+  gap: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 32px;
+  flex: 0 0 auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header-logo {
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+}
+
+.toolbar-center {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links .q-btn {
+  font-size: 1.4rem;
+  padding: 0 16px;
+}
+
+.toolbar-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 32px;
+}
+
+.user-icon {
+  color: #fff;
+  font-size: 1.4rem;
+}
+</style>
