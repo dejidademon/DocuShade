@@ -81,7 +81,7 @@
         </div>
         <div class="trust-testimonial">
           <q-avatar size="56px" class="testimonial-avatar">
-            <img src="~assets/mainPage/jordan.jpg" alt="Jordan M." />
+            <img src="~assets/reviewPage/asainMaleSmile.webp" alt="Jordan M." />
           </q-avatar>
           <div>
             <div class="testimonial-text">
