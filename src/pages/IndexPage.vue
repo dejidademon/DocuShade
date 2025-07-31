@@ -20,8 +20,8 @@
               DMV-approved tint exemptions through licensed doctors — fast, simple, and secure.
             </p>
             <div class="hero-cta">
-              <q-btn color="primary" unelevated class="cta-btn" label="Book a Consultation" />
-              <q-btn color="secondary" flat class="cta-btn" label="See if You Qualify" />
+              <q-btn color="primary" to="/exemption" unelevated class="cta-btn" label="Book a Consultation" />
+
             </div>
           </div>
           <div class="hero-visual">
@@ -115,18 +115,24 @@
       <!-- Footer Section -->
       <footer class="footer-section">
         <div class="footer-links">
+          <router-link to="/" class="footer-link">Home</router-link>
           <router-link to="/about" class="footer-link">About</router-link>
-          <router-link to="/terms" class="footer-link">Terms</router-link>
-          <router-link to="/contact" class="footer-link">Contact</router-link>
+          <a href="mailto:docushade@gmail.com" class="footer-link">Contact</a>
+          <router-link to="/policies/terms-of-service" class="footer-link">Terms</router-link>
         </div>
         <div class="footer-social">
-          <q-icon name="instagram" size="28px" class="footer-icon" />
-          <q-icon name="tiktok" size="28px" class="footer-icon" />
-          <q-icon name="facebook" size="28px" class="footer-icon" />
+          <a href="https://www.instagram.com/docushade/" target="_blank" rel="noopener" class="footer-icon-link">
+            <q-icon name="instagram" size="28px" class="footer-icon" />
+          </a>
+          <a href="https://www.tiktok.com/@docushade" target="_blank" rel="noopener" class="footer-icon-link">
+            <q-icon name="tiktok" size="28px" class="footer-icon" />
+          </a>
+          <a href="https://www.tiktok.com/@docushade" target="_blank" rel="noopener" class="footer-icon-link">
+            <q-icon name="facebook" size="28px" class="footer-icon" />
+          </a>
         </div>
         <div class="footer-contact">
           <div>docushade@gmail.com | (347) 835-4380</div>
-          <div>221 Chinook Dr, Syracuse, NY 13210</div>
         </div>
       </footer>
     </div>
@@ -180,15 +186,17 @@ export default {
 }
 .hero-headline {
   color: #fff;
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   font-weight: 700;
   margin-bottom: 16px;
   letter-spacing: 1px;
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 .hero-subheadline {
   color: #b3b3b3;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   margin-bottom: 32px;
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 .hero-cta {
   display: flex;
@@ -202,6 +210,7 @@ export default {
   box-shadow: 0 2px 8px rgba(128,0,255,0.12);
   font-weight: 600;
   padding: 12px 32px;
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 .hero-visual {
   flex: 1 1 0;
@@ -227,10 +236,11 @@ export default {
 }
 .section-title {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 24px;
   text-align: center;
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 .how-steps {
   display: flex;
@@ -251,12 +261,14 @@ export default {
 }
 .how-step-title {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 500;
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 .how-step-desc {
   color: #b3b3b3;
   font-size: 1rem;
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 
 /* Trust Section */
@@ -281,12 +293,13 @@ export default {
   color: #fff;
   border-radius: 12px;
   padding: 12px 24px;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 10px;
   box-shadow: 0 2px 8px rgba(128,0,255,0.06);
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 .stars {
   color: #ffc107;
@@ -310,13 +323,15 @@ export default {
 }
 .testimonial-text {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   font-style: italic;
   margin-bottom: 4px;
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 .testimonial-meta {
   color: #b3b3b3;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 
 /* FAQ Section */
@@ -337,18 +352,21 @@ export default {
   border-radius: 12px;
   margin-bottom: 10px;
   box-shadow: 0 2px 8px rgba(128,0,255,0.06);
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 
 /* Footer Section */
 .footer-section {
   background: #181818;
   color: #fff;
-  border-radius: 24px 24px 0 0;
+  border-radius: 24px;
   margin: 32px auto 0 auto;
   padding: 32px 16px 16px 16px;
   max-width: 900px;
   box-shadow: 0 -2px 16px rgba(128,0,255,0.08);
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .footer-links {
   display: flex;
@@ -364,6 +382,7 @@ export default {
   border-radius: 8px;
   padding: 4px 12px;
   transition: background 0.2s;
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 .footer-link:hover {
   background: #222;
@@ -385,6 +404,7 @@ export default {
   color: #b3b3b3;
   font-size: 1rem;
   margin-bottom: 4px;
+  font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
 }
 
 /* Logo Overlay Animation */

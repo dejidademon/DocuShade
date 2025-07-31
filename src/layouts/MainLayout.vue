@@ -17,8 +17,8 @@
           <div class="nav-links">
             <q-btn flat label="Reviews" to="/reviews" />
             <q-btn flat label="Start My Exemption" to="/exemption" />
-            <q-btn flat label="Terms of Service" to="/terms" />
-            <q-btn flat label="Email Us" href="mailto:info@docushade.com" />
+            <q-btn flat label="Terms of Service" to="/policies/terms-of-service" />
+            <q-btn flat label="Email Us" href="mailto:docushade@gmail.com" />
           </div>
         </div>
         <div class="toolbar-right">
