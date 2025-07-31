@@ -4,7 +4,7 @@
     <transition name="fade-logo" @after-leave="showContent = true">
       <div v-if="showLogo" class="logo-overlay">
         <img
-          src="src/assets/logos/DocushadeLogo.png"
+          src="~assets/logos/DocushadeLogo.png"
           alt="Docushade Logo"
           class="logo-full"
         />
@@ -21,11 +21,10 @@
             </p>
             <div class="hero-cta">
               <q-btn color="primary" to="/exemption" unelevated class="cta-btn" label="Book a Consultation" />
-
             </div>
           </div>
           <div class="hero-visual">
-            <img src="src/assets/mainPage/blackTicket.webp" alt="Dark-tinted car" class="hero-img" />
+            <img src="~assets/mainPage/blackTicket.webp" alt="Dark-tinted car" class="hero-img" />
             <!-- <video src="src/assets/mainPage/doctor-patient.mp4" autoplay loop muted class="hero-video"></video> -->
           </div>
         </div>
@@ -82,7 +81,7 @@
         </div>
         <div class="trust-testimonial">
           <q-avatar size="56px" class="testimonial-avatar">
-            <img src="src/assets/mainPage/jordan.jpg" alt="Jordan M." />
+            <img src="~assets/mainPage/jordan.jpg" alt="Jordan M." />
           </q-avatar>
           <div>
             <div class="testimonial-text">
@@ -490,4 +489,5 @@ export default {
     font-size: 2rem;
   }
 }
+</style>
 </style>

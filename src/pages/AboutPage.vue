@@ -17,7 +17,7 @@
       <div class="about-founder-flex">
         <div class="about-founder-photo">
           <!-- Optional: Replace with actual photo if available -->
-          <img src="src/assets/mainPage/founder.webp" alt="Adedeji Oyefeso" />
+          <img src="~assets/mainPage/founder.webp" alt="Adedeji Oyefeso" />
         </div>
         <div class="about-founder-text">
           <p>
@@ -162,7 +162,7 @@
 .about-hero-bg {
   position: absolute;
   inset: 0;
-  background: url('src/assets/mainPage/vertStopped.webp') center/cover no-repeat;
+  background: url('~assets/mainPage/vertStopped.webp') center/cover no-repeat;
   opacity: 0.14;
   z-index: 0;
 }

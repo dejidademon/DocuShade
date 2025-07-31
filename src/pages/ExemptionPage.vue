@@ -233,6 +233,8 @@ onMounted(() => {
   overflow: hidden;
   background: #181818;
   box-shadow: 0 2px 16px rgba(128,0,255,0.08);
+  /* If you want a background image here, use: */
+  /* background-image: url('~assets/mainPage/your-bg-image.webp'); */
 }
 .survey-actions {
   display: flex;

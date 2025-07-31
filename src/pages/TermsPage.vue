@@ -136,6 +136,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* If you have a background image, update here */
+  /* background-image: url('~assets/mainPage/your-bg-image.webp'); */
 }
 
 .terms-container {

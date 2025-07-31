@@ -253,7 +253,7 @@ function submitReview() {
 .reviews-hero-bg {
   position: absolute;
   inset: 0;
-  background: url('src/assets/mainPage/blackTicket.webp') center/cover no-repeat;
+  background: url('~assets/mainPage/blackTicket.webp') center/cover no-repeat;
   opacity: 0.18;
   z-index: 0;
 }
