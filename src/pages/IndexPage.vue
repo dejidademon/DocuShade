@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class="trust-testimonial">
-          <q-avatar size="56px" class="testimonial-avatar">
+          <q-avatar size="156px" class="testmonial-avatar">
             <img src="~assets/reviewPage/asainMaleSmile.webp" alt="Jordan M." />
           </q-avatar>
           <div>

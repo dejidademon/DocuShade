@@ -37,7 +37,7 @@ export default defineConfig((/* ctx */) => {
         node: 'node20',
       },
 
-      vueRouterMode: 'history', // available values: 'hash', 'history'
+      vueRouterMode: 'history', // force 'history' mode for clean URLs
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
