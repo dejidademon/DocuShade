@@ -471,6 +471,8 @@ export default {
   .trust-testimonial {
     flex-direction: column;
     gap: 8px;
+    align-items: center;
+    text-align: center;
   }
   .trust-badges {
     flex-direction: column;
@@ -487,6 +489,37 @@ export default {
   }
   .hero-headline {
     font-size: 2rem;
+  }
+  .testmonial-avatar {
+    width: 90px !important;
+    height: 90px !important;
+    min-width: 90px !important;
+    min-height: 90px !important;
+    max-width: 90px !important;
+    max-height: 90px !important;
+  }
+}
+@media (max-width: 600px) {
+  .footer-section {
+    padding: 12px 2px 8px 2px;
+    font-size: 0.98rem;
+  }
+  .footer-links {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .footer-link {
+    font-size: 0.98rem;
+    padding: 3px 7px;
+  }
+  .footer-social {
+    gap: 8px;
+  }
+  .hero-headline {
+    font-size: 1.2rem;
+  }
+  .hero-subheadline {
+    font-size: 0.98rem;
   }
 }
 </style>

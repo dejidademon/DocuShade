@@ -433,4 +433,40 @@ onMounted(() => {
   .testimonial-card { min-width: 120px; max-width: 100%; }
   .sticky-cta-bar { font-size: 1rem; padding: 12px 4px 10px 4px; }
 }
+@media (max-width: 700px) {
+  .survey-section, .booking-section, .faq-section {
+    padding: 10px 2px;
+  }
+  .testimonials-strip {
+    gap: 6px;
+  }
+}
+@media (max-width: 600px) {
+  .exemption-header { padding: 16px 2px 12px 2px; }
+  .exemption-title { font-size: 1.1rem; }
+  .exemption-subtitle { font-size: 0.95rem; }
+  .section-title { font-size: 1.1rem; }
+  .booking-section, .faq-section, .survey-section {
+    padding: 8px 2px;
+  }
+  .testimonial-card {
+    font-size: 0.98rem;
+    padding: 8px 6px;
+  }
+  .footer-section {
+    padding: 10px 2px 6px 2px;
+    font-size: 0.98rem;
+  }
+  .footer-links {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .footer-link {
+    font-size: 0.98rem;
+    padding: 3px 7px;
+  }
+  .footer-social {
+    gap: 8px;
+  }
+}
 </style>

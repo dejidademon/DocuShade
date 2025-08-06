@@ -398,5 +398,45 @@
   .about-founder-photo img { width: 100px; height: 100px; }
   .about-mission-section, .about-how-section, .about-trust-section, .about-area-section { padding: 0 4px; }
   .footer-section { padding: 18px 4px 10px 4px; }
+  .about-area-list {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .about-area-item {
+    font-size: 0.98rem;
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .about-founder-photo img { width: 70px; height: 70px; }
+  .about-section-title { font-size: 1rem; }
+  .about-headline { font-size: 1.1rem; }
+  .about-subheadline { font-size: 0.95rem; }
+  .about-mission-list, .about-how-list {
+    font-size: 0.98rem;
+  }
+  .about-founder-text {
+    font-size: 0.98rem;
+    max-width: 100%;
+  }
+  .about-area-item {
+    font-size: 0.95rem;
+    padding: 4px 6px;
+  }
+  .footer-section {
+    padding: 10px 2px 6px 2px;
+    font-size: 0.98rem;
+  }
+  .footer-links {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .footer-link {
+    font-size: 0.98rem;
+    padding: 3px 7px;
+  }
+  .footer-social {
+    gap: 8px;
+  }
 }
 </style>

@@ -578,4 +578,29 @@ function submitReview() {
     gap: 8px;
   }
 }
+@media (max-width: 600px) {
+  .reviews-hero-content { max-width: 98vw; }
+  .review-card, .proof-photo {
+    padding: 10px 6px;
+    font-size: 0.98rem;
+  }
+  .section-title { font-size: 1.1rem; }
+  .reviews-headline { font-size: 1.1rem; }
+  .reviews-subheadline { font-size: 0.95rem; }
+  .footer-section {
+    padding: 10px 2px 6px 2px;
+    font-size: 0.98rem;
+  }
+  .footer-links {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .footer-link {
+    font-size: 0.98rem;
+    padding: 3px 7px;
+  }
+  .footer-social {
+    gap: 8px;
+  }
+}
 </style>

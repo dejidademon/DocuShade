@@ -8,6 +8,7 @@ const routes = [
       { path: 'policies/terms-of-service', component: () => import('pages/TermsPage.vue') },
       { path: 'reviews', component: () => import('pages/ReviewsPage.vue') },
       { path: 'about', component: () => import('pages/AboutPage.vue') },
+      { path: 'account', component: () => import('pages/AccountPage.vue') },
     ],
   },
 

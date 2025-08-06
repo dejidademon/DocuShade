@@ -216,7 +216,7 @@
   z-index: 1;
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 30%
+
 }
 
 .footer-links {
@@ -251,6 +251,35 @@
   }
   .terms-title {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 600px) {
+  .terms-container {
+    padding: 8px 2px 8px 2px;
+  }
+  .terms-title {
+    font-size: 1.1rem;
+  }
+  .terms-content, .terms-content li {
+    font-size: 0.98rem;
+  }
+  .footer-section {
+    padding: 10px 2px 6px 2px;
+    font-size: 0.98rem;
+    width: 100%;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .footer-links {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .footer-link {
+    font-size: 0.98rem;
+    padding: 3px 7px;
+  }
+  .footer-social {
+    gap: 8px;
   }
 }
 </style>
